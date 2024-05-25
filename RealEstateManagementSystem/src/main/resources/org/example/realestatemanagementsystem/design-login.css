@@ -1,0 +1,39 @@
+.close{
+    -fx-background-color:  #141e30;
+    -fx-cursor: hand;
+}
+
+.close:hover{
+    -fx-background-color: #0000ff;
+
+}
+.minimize{
+    -fx-background-color:  #141e30;
+    -fx-cursor: hand;
+}
+
+.minimize:hover{
+    -fx-background-color: #0000ff;
+
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-text-inner-color: #fff;
+    -fx-border-color: #1a53ff;
+    -fx-border-width: 0px 0px .4px 0px;
+    -fx-padding: 3px 3px 3px 25;
+}
+
+.textfield:focused{
+    -fx-border-color: #3399ff;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.hypertext{
+    -fx-text-fill: #cce5ff;
+}
+.hypertext:focused{
+    -fx-border-color: #3399ff;
+    -fx-border-width: 0px 0px 3px 0px;
+}
