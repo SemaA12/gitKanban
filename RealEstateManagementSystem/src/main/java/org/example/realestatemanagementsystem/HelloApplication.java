@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
+import org.example.realestatemanagementsystem.logic.StageHelper;
+
 import java.io.IOException;
 import java.net.URL;
 
@@ -11,7 +13,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        URL resourceUrl = getClass().getResource("hello-view.fxml");
+        URL resourceUrl = getClass().getResource("/org/example/realestatemanagementsystem/hello-view.fxml");
         if (resourceUrl != null) {
             Parent root = FXMLLoader.load(resourceUrl);
             StageHelper.configureStage(stage, root);

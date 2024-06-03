@@ -7,4 +7,11 @@ module org.example.realestatemanagementsystem {
 
     opens org.example.realestatemanagementsystem to javafx.fxml;
     exports org.example.realestatemanagementsystem;
+    exports org.example.realestatemanagementsystem.controller;
+    opens org.example.realestatemanagementsystem.controller to javafx.fxml;
+    exports org.example.realestatemanagementsystem.data;
+    opens org.example.realestatemanagementsystem.data to javafx.fxml;
+    exports org.example.realestatemanagementsystem.logic;
+    opens org.example.realestatemanagementsystem.logic to javafx.fxml;
+
 }
