@@ -2,8 +2,8 @@ module org.example.realestatemanagementsystem {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
-
-
+    requires itext;
+    requires java.desktop;
 
     opens org.example.realestatemanagementsystem to javafx.fxml;
     exports org.example.realestatemanagementsystem;

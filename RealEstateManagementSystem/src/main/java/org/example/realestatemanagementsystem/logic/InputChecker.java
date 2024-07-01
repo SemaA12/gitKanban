@@ -19,4 +19,10 @@ public class InputChecker {
            //     "^[a-zA-Z0-9]{8,32}$");
         return pattern.matcher(password).matches();
     }
+    public boolean checkingDescription(String description){
+        Pattern pattern = Pattern.compile(
+                "^[\\p{L}\\p{M}' .\\-]+$");
+        return pattern.matcher(description).matches();
+    }
+
 }

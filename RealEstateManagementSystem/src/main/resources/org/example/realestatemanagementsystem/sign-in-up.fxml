@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.realestatemanagementsystem.controller.HelloController">
+   <AnchorPane fx:id="login_form1" layoutX="400.0" prefHeight="500.0" prefWidth="400.0"
+               style="-fx-background-color: #141e30;">
+      <FontAwesomeIcon fill="#87aff4" glyphName="USERS" layoutX="147.0" layoutY="123.0" size="7em"/>
+      <TextField fx:id="login_username" layoutX="82.0" layoutY="203.0" onAction="#onClickLogin" prefHeight="30.0"
+                 prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@design-login.css"/>
+      <PasswordField fx:id="login_password" layoutX="82.0" layoutY="247.0" onAction="#onClickLogin" prefHeight="30.0"
+                     prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@design-login.css"/>
+      <Button fx:id="login" layoutX="158.0" layoutY="321.0" mnemonicParsing="false" onAction="#onClickLogin"
+              prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #87aff4;" text="Login">
+         <font>
+            <Font name="Microsoft Sans Serif" size="12.0"/>
+         </font>
+      </Button>
+      <Hyperlink fx:id="login_createAccount" layoutX="142.0" layoutY="392.0" onAction="#switchForm"
+                 styleClass="hypertext" stylesheets="@design-login.css" text="Create new account" textFill="WHITE"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="USER" layoutX="89.0" layoutY="222.0"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="LOCK" layoutX="88.0" layoutY="266.0"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="USER_PLUS" layoutX="130.0" layoutY="408.0"/>
+      <Button fx:id="login_close" layoutX="347.0" layoutY="6.0" mnemonicParsing="false" onAction="#login_close"
+              prefHeight="24.0" prefWidth="52.0" styleClass="close" stylesheets="@design-login.css"
+              AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      <FontAwesomeIcon fill="#f6f3f3" glyphName="CLOSE" layoutX="369.0" layoutY="18.0"/>
+      <Button fx:id="login_minimize" layoutX="294.0" layoutY="1.0" mnemonicParsing="false" onAction="#login_minimize"
+              prefHeight="24.0" prefWidth="52.0" styleClass="minimize" stylesheets="@design-login.css"
+              AnchorPane.leftAnchor="294.0" AnchorPane.topAnchor="0.0"/>
+      <FontAwesomeIcon fill="WHITE" glyphName="MINUS" layoutX="315.0" layoutY="18.0"/>
+      <Label layoutX="154.0" layoutY="135.0" prefHeight="42.0" prefWidth="75.0" text="SIGN IN" textFill="#87aff4">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0"/>
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane fx:id="login_form2" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #141e30;">
+      <FontAwesomeIcon fx:id="b2" fill="#87aff4" glyphName="HOME" layoutX="44.0" layoutY="231.0" size="10em">
+         <effect>
+            <Reflection bottomOpacity="0.02" fraction="0.58" topOpacity="0.49"/>
+         </effect>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="b1" fill="#87aff4" glyphName="BUILDING" layoutX="133.0" layoutY="235.0" size="15em">
+         <effect>
+            <Reflection bottomOpacity="0.15" fraction="0.4"/>
+         </effect>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="b3" fill="#87aff4" glyphName="BUILDING" layoutX="260.0" layoutY="231.0" size="10em">
+         <effect>
+            <Reflection fraction="0.45"/>
+         </effect>
+      </FontAwesomeIcon>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="348.0" prefHeight="53.0"
+             prefWidth="361.0" text="Real Estate Management System" textAlignment="CENTER" textFill="#87aff4">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane fx:id="signup_form2" layoutX="400.0" prefHeight="500.0" prefWidth="400.0"
+               style="-fx-background-color: #141e30;" visible="false">
+      <FontAwesomeIcon fx:id="b21" fill="#87aff4" glyphName="HOME" layoutX="44.0" layoutY="231.0" size="10em">
+         <effect>
+            <Reflection bottomOpacity="0.02" fraction="0.58" topOpacity="0.49"/>
+         </effect>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="b11" fill="#87aff4" glyphName="BUILDING" layoutX="133.0" layoutY="235.0" size="15em">
+         <effect>
+            <Reflection bottomOpacity="0.15" fraction="0.4"/>
+         </effect>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="b31" fill="#87aff4" glyphName="BUILDING" layoutX="260.0" layoutY="231.0" size="10em">
+         <effect>
+            <Reflection fraction="0.45"/>
+         </effect>
+      </FontAwesomeIcon>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="348.0" prefHeight="53.0"
+             prefWidth="361.0" text="Real Estate Management System" textAlignment="CENTER" textFill="#87aff4">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+      <Button fx:id="signup_close" layoutX="347.0" layoutY="1.0" mnemonicParsing="false" onAction="#login_close"
+              prefHeight="24.0" prefWidth="52.0" styleClass="close" stylesheets="@design-login.css"
+              AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="0.3333333333333144" AnchorPane.topAnchor="1.0"/>
+      <FontAwesomeIcon fill="#f6f3f3" glyphName="CLOSE" layoutX="369.0" layoutY="18.0"/>
+      <Button fx:id="signup_minimize" layoutX="295.0" layoutY="1.0" mnemonicParsing="false"
+              onAction="#login_minimize" prefHeight="24.0" prefWidth="52.0" styleClass="minimize"
+              stylesheets="@design-login.css" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="1.0"/>
+      <FontAwesomeIcon fill="WHITE" glyphName="MINUS" layoutX="316.0" layoutY="18.0"/>
+   </AnchorPane>
+   <AnchorPane fx:id="signup_form1" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #141e30;"
+               visible="false">
+      <FontAwesomeIcon fill="#87aff4" glyphName="USER_PLUS" layoutX="148.0" layoutY="121.0" size="7em"/>
+      <TextField fx:id="signup_email" layoutX="84.0" layoutY="181.0" onAction="#onClickSignUp" prefHeight="30.0"
+                 prefWidth="220.0" promptText="Email" styleClass="textfield" stylesheets="@design-login.css"/>
+      <PasswordField fx:id="signup_password" layoutX="84.0" layoutY="265.0" onAction="#onClickSignUp"
+                     prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield"
+                     stylesheets="@design-login.css"/>
+      <Button fx:id="signup" layoutX="156.0" layoutY="334.0" mnemonicParsing="false" onAction="#onClickSignUp"
+              prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #87aff4;" text="Sign Up">
+         <font>
+            <Font name="Microsoft Sans Serif" size="12.0"/>
+         </font>
+      </Button>
+      <Hyperlink fx:id="signup_accountExists" layoutX="128.0" layoutY="400.0" onAction="#switchForm"
+                 styleClass="hypertext" stylesheets="@design-login.css" text="Account already exists?"
+                 textFill="WHITE"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="ENVELOPE" layoutX="91.0" layoutY="200.0"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="LOCK" layoutX="90.0" layoutY="284.0"/>
+      <FontAwesomeIcon fill="#87aff4" glyphName="USER" layoutX="90.0" layoutY="240.0"/>
+      <Label layoutX="157.0" layoutY="134.0" prefHeight="42.0" prefWidth="75.0" text="SIGN UP" textFill="#87aff4">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="signup_username" layoutX="86.0" layoutY="221.0" onAction="#onClickSignUp" prefHeight="30.0"
+                 prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@design-login.css"/>
+   </AnchorPane>
+</AnchorPane>

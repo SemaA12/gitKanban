@@ -96,4 +96,18 @@ public class PropertyData {
     public void setImage(String image) {
         this.image = image;
     }
+
+
+    @Override
+    public String toString() {
+        return address;
+    }
+
+    public PropertyData(int id,  String address) {
+        this.id = id;
+        this.address = address;
+
+    }
+
+
 }

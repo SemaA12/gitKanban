@@ -15,12 +15,12 @@ public class LeaseContractsData {
     private String contract;
 
 
-    public LeaseContractsData(int id, int tenantId,String tenantName, int propertyId, String propertyAddress, Date startDate, Date endDate, Double rentAmount, String paymentStatus, String contract) {
+    public LeaseContractsData(int id, int tenantId, String tenantName, int propertyId, String propertyAddress, Date startDate, Date endDate, Double rentAmount, String paymentStatus, String contract) {
         this.id = id;
         this.tenantId = tenantId;
         this.tenantName = tenantName;
         this.propertyId = propertyId;
-        this.propertyAddress =propertyAddress;
+        this.propertyAddress = propertyAddress;
         this.startDate = startDate;
         this.endDate = endDate;
         this.rentAmount = rentAmount;
@@ -106,5 +106,12 @@ public class LeaseContractsData {
 
     public void setPropertyAddress(String propertyAddress) {
         this.propertyAddress = propertyAddress;
+    }
+
+    public LeaseContractsData() {
+    }
+    @Override
+    public String toString() {
+        return propertyAddress;
     }
 }

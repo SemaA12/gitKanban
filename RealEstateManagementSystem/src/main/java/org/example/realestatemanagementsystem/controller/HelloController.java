@@ -9,7 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.example.realestatemanagementsystem.data.DBConnection;
-import org.example.realestatemanagementsystem.data.GetData;
+import org.example.realestatemanagementsystem.data.RealEstateMetrics;
 import org.example.realestatemanagementsystem.logic.HashingPassword;
 import org.example.realestatemanagementsystem.logic.InputChecker;
 import org.example.realestatemanagementsystem.logic.StageHelper;
@@ -186,11 +186,16 @@ public class HelloController {
                 } else {
                     if (resultSet.next()) {
 
-                        GetData.username = login_username.getText();
+                        RealEstateMetrics.username = login_username.getText();
 
                         String hashedPasswordFromDB = resultSet.getString("password");
                         String inputPassword = login_password.getText();
                         if (verifyPassword(inputPassword, hashedPasswordFromDB)) {
+
+                            DashboardController.totalSoldProperties();
+                            DashboardController.totalIncome();
+                            DashboardController.numberOfAvailableProperties();
+                            DashboardController.chart();
 
                             login.getScene().getWindow().hide();
 
